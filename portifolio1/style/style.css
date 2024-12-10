@@ -1,0 +1,161 @@
+body {
+    background: #000000eb;
+    color: #fff;
+    font-family: "Roboto";
+    max-width: calc(1140px - 50px);
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+.text {
+    width: 50%;
+}
+.text .presentation {
+    display: block;
+    margin: 3rem 0;
+}
+.text .presentation .title {
+    font-size: 3rem;
+}
+.text .presentation .title span {
+    color: #f37601;
+    font-weight: 500;
+}
+.text .topic {
+    margin-top: 1rem;
+}
+.text .topic .title {
+    font-size: 1.5rem;
+    color: #f37601;
+}
+.text .topic .description {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.text .topic .list {
+    margin-top: 1rem;
+}
+.text .topic .list li {
+    margin-top: 1rem;
+    display: block;
+}
+.text .topic .list li .list-name {
+    font-weight: 500;
+    color: #f37601;
+    font-size: 1.2rem;
+
+}
+.text .topic .list li .list-description {
+    display: block;
+    margin-top: 0.5rem;
+    line-height: 1.2rem;
+}
+.imagem {
+    width: 50%;
+    position: relative;
+}
+.imagem .description {
+    width: 100%;
+    position: sticky;
+    top: 2rem;
+    z-index: 100;
+}
+.imagem .description img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #f37601;
+    padding: 15px;
+    border-radius: 25px;
+}
+.imagem .description .topics {
+    max-width: 300px;
+    width: 100%;
+    margin: 1rem auto 0;
+}
+.imagem .description .topics .topic {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imagem .description .topics .topic .link-icon {
+    width: calc(15% - 10px);
+    margin: 0 5px;
+}
+.imagem .description .topics .topic .link-icon svg {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.imagem .description .topics .topic .link-icon svg {
+    fill: #f37601;
+}
+.imagem .description .topics .topic span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.imagem .description .topics .topic .mini-link-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.imagem .description .topics .topic .mini-link-icon svg {
+    width: 100%;
+    height: 100%;
+}
+.imagem .description .topics .topic .mini-link-icon svg, .imagem .description .topics .topic .mini-link-icon svg path {
+    fill: #f37601;
+}
+
+.footer {
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+}
+.footer::after {
+    content: "";
+    display: block;
+    background: #f37601;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+}
+::-webkit-scrollbar-track {
+    background: #141414; 
+}
+::-webkit-scrollbar-thumb {
+    background: #f37601; 
+}
+::-webkit-scrollbar-horizontal {
+    height: 5   px; 
+}
+::-webkit-scrollbar-thumb:horizontal {
+    background: #555; 
+}
